@@ -1,4 +1,4 @@
-
+#SQL Query Based on SELECT
 
 Q1 - Recyclable and Low Fat Products
 
@@ -22,6 +22,8 @@ SOLUTION
 SELECT product_id from products 
 where low_fats = "Y" and recyclable = "Y";
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 Q2 -  Find Customer Referee
 
@@ -44,6 +46,7 @@ SOLUTION
 select name 
 from customer
 where referee_id != 2 or referee_id is null;
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Q3 -  Big Countries
 
@@ -71,6 +74,8 @@ SOLUTION
 select name , population , area
 from world
 where area >= 3000000 or population >= 25000000 ;
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 Q4 - Article Views I
 
@@ -95,7 +100,7 @@ SELECT DISTINCT author_id as id
 FROM Views
 WHERE author_id = viewer_id
 ORDER BY author_id ;
-
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Q5 -  Invalid Tweets
 
