@@ -1,6 +1,5 @@
-# :computer: LeetCode SQL Question and Answer - 
-- [Easy](https://github.com/yogeshkasar778/LeetCode_SQL_Practice/edit/main/README.md#dart-difficulty-level---easy)
-- [Medium](https://github.com/yogeshkasar778/StrataScratch_SQL_Practice#dart-difficulty-level---easy)
+# 🧭: LeetCode SQL Question and Answer - 
+
   
 ##  :dart: `Difficulty Level - Easy`
   
@@ -35,9 +34,9 @@ Products table:
 
  ###  Solution - 
     
-    SELECT product_id 
-    FROM Product
-    WHERE low_fats = 'Y' AND recyclable = 'N';
+    SELECT product_id
+    FROM products 
+    WHERE low_fats = "Y" AND recyclable = "Y";
 
 **Output:**
 
@@ -77,8 +76,8 @@ Customer table:
  ###  Solution - 
     
     SELECT name 
-    FROM Customer
-    WHERE referee_id <> 2 AND referee_id is null;
+    FROM customer
+    WHERE referee_id != 2 OR referee_id is null;
 
 **Output:**
 
@@ -121,9 +120,9 @@ World table:
 
  ###  Solution - 
     
-    SELECT name, population, area 
-    FROM World
-    WHERE area >= 3000000 or population >= 25000000;
+    SELECT name , population , area
+    FROM world
+    WHERE area >= 3000000 or population >= 25000000 ;
 
 **Output:**
 
@@ -263,7 +262,7 @@ EmployeeUNI   table:
  ###  Solution - 
     
     SELECT eU.unique_id, e.name 
-    FROM Employee as e
+    FROM Employees as e
     LEFT JOIN EmployeeUNI as eU ON e.id=eU.id;
 
 **Output:**
